@@ -1,0 +1,15 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aycanogut/faq-accordion-card.git",
+  "author": "aycanogut <aycanonfire@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.35.1"
+  },
+  "scripts": {
+    "dev": "live-server && sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map"
+  }
+}
