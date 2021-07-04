@@ -10,6 +10,6 @@
     "sass": "^1.35.1"
   },
   "scripts": {
-    "dev": "live-server && sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map"
+    "dev": "live-server & sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map"
   }
 }
