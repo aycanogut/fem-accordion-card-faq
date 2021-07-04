@@ -1,0 +1,27 @@
+/// mixin
+
+@use 'breakpoints' as *;
+
+// media quaries
+@mixin mq($args) {
+  $size: map-get($breakpoints, $args);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// transition
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// box-shadow
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
