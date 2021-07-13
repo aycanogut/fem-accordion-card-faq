@@ -4,3 +4,13 @@
   margin: 0 auto;
   max-width: 50rem;
 }
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+}
