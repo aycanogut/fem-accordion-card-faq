@@ -26,3 +26,28 @@ h1 {
 img {
   max-width: 100%;
 }
+
+details > summary {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  content: url("../../../../images/icon-arrow-down.svg");
+  display: block;
+  height: 12px;
+  width: 12px;
+}
+
+details[open] > summary::after {
+  content: url('"../../../../images/icon-arrow-up.svg');
+  display: block;
+  width: 12px;
+  height: 12px;
+}
