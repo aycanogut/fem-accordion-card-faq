@@ -4,6 +4,7 @@
   margin-top: 14.8em;
   padding: 8.8em 1.375em 3em 1.375em;
   background-color: #fff;
+  border-radius: 24px;
 
   &__background {
     //* displays on only mobile screens
@@ -27,7 +28,7 @@
 
   // right side content
   &__header {
-    margin-top: 100px;
+    margin: 4.6em 0 2em 0;
     text-align: center;
   }
 
