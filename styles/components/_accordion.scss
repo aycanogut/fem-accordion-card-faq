@@ -1,5 +1,7 @@
 /// section
 
+@use '../abstracts/' as *;
+
 .accordion {
   margin-top: 14.8em;
   padding: 8.8em 1.375em 3em 1.375em;
@@ -34,10 +36,18 @@
 
   // card component
   &__article {
+    padding: 2.5em 1em;
+    border-bottom: 1px solid $color-light-grayish-blue;
   }
+
+  // visible content
   &__article__top {
     display: flex;
     justify-content: space-between;
-    background-color: red;
+  }
+
+  // hidden content
+  &__article__bottom {
+    display: none;
   }
 }
