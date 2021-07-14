@@ -2,15 +2,26 @@
 
 .accordion {
   &__background {
-    // displays on only mobile screens
+    //* displays on only mobile screens
     &__mobile {
-      background: center center no-repeat
-        url("../../images/illustration-woman-online-mobile.svg");
+      position: relative;
+      &__illustration {
+        position: absolute;
+        top: 41px;
+        left: 40px;
+      }
+      &__pattern {
+        position: absolute;
+        top: 143px;
+        left: 68px;
+      }
     }
+    // * displays on only bigger screens
   }
 
   // right side content
   &__header {
+    margin-top: 300px;
     text-align: center;
     background-color: #fff;
   }
