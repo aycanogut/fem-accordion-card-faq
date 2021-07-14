@@ -1,16 +1,8 @@
 /// layout
 
+@use '../abstracts/' as *;
+
 .container {
-  margin: 0 auto;
-  max-width: 50rem;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-}
-
-.col {
-  display: flex;
-  flex-direction: row;
+  @include make-container(2.3em);
+  height: 100%;
 }
