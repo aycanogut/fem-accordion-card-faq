@@ -1,6 +1,8 @@
 /// section
 
 .accordion {
+  padding: 8.8em 1.375em 3em 1.375em;
+  background-color: #fff;
   &__background {
     //* displays on only mobile screens
     &__mobile {
@@ -8,12 +10,14 @@
       &__illustration {
         position: absolute;
         top: 41px;
-        left: 40px;
+        left: 46%;
+        transform: translate(-50%, 0);
       }
       &__pattern {
         position: absolute;
         top: 143px;
-        left: 68px;
+        left: 49.1%;
+        transform: translate(-50%, 0);
       }
     }
     // * displays on only bigger screens
@@ -21,14 +25,11 @@
 
   // right side content
   &__header {
-    margin-top: 300px;
     text-align: center;
-    background-color: #fff;
   }
 
   // card component
   &__article {
-    background-color: #fff;
   }
   &__article__top {
     display: flex;
