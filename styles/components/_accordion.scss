@@ -1,23 +1,24 @@
 /// section
 
 .accordion {
-  margin-top: 9.0625em;
+  margin-top: 14.8em;
   padding: 8.8em 1.375em 3em 1.375em;
   background-color: #fff;
+
   &__background {
     //* displays on only mobile screens
     &__mobile {
       position: relative;
       &__illustration {
         position: absolute;
-        top: 2.5625em;
+        top: 4em;
         left: 46%;
         transform: translate(-50%, 0);
       }
       &__pattern {
         position: absolute;
-        top: 8.9375em;
-        left: 49.1%;
+        top: 14.6em;
+        left: 50%;
         transform: translate(-50%, 0);
       }
     }
@@ -26,6 +27,7 @@
 
   // right side content
   &__header {
+    margin-top: 100px;
     text-align: center;
   }
 
