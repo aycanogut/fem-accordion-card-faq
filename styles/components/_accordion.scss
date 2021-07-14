@@ -1,0 +1,27 @@
+/// section
+
+.accordion {
+  &__background {
+    // displays on only mobile screens
+    &__mobile {
+      background: center center no-repeat
+        url("../../images/illustration-woman-online-mobile.svg");
+    }
+  }
+
+  // right side content
+  &__header {
+    text-align: center;
+    background-color: #fff;
+  }
+
+  // card component
+  &__article {
+    background-color: #fff;
+  }
+  &__article__top {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+  }
+}
