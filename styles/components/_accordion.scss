@@ -3,8 +3,8 @@
 @use '../abstracts/' as *;
 
 .accordion {
-  margin-top: 14.8em;
-  padding: 8.8em 0.9em 4.7em 0.9em;
+  margin-top: 14.9em;
+  padding: 8.8em 0.9em 4.9em 0.9em;
   background-color: #fff;
   border-radius: 24px;
 
@@ -16,15 +16,16 @@
     //* displays on only mobile screens
     &__mobile {
       position: relative;
+
       &__illustration {
         position: absolute;
-        top: 4em;
+        top: 4.1em;
         left: 46%;
         transform: translate(-50%, 0);
       }
       &__pattern {
         position: absolute;
-        top: 14.6em;
+        top: 14.7em;
         left: 50%;
         transform: translate(-50%, 0);
       }
