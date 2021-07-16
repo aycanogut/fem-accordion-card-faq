@@ -4,7 +4,7 @@
 
 .accordion {
   margin-top: 14.8em;
-  padding: 8.8em 1.375em 4.7em 1.375em;
+  padding: 8.8em 0.9em 4.7em 0.9em;
   background-color: #fff;
   border-radius: 24px;
 
@@ -48,7 +48,7 @@
   &__article__details {
     display: flex;
     justify-content: space-between;
-
+    color: $color-dark-grayish-blue;
     span {
       padding-top: 1.225rem;
     }
