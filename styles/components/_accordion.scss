@@ -4,9 +4,13 @@
 
 .accordion {
   margin-top: 14.8em;
-  padding: 8.8em 1.375em 3em 1.375em;
+  padding: 8.8em 1.375em 4.7em 1.375em;
   background-color: #fff;
   border-radius: 24px;
+
+  &__main {
+    padding: 0 1.5em;
+  }
 
   &__background {
     //* displays on only mobile screens
@@ -30,13 +34,13 @@
 
   // right side content
   &__header {
-    margin: 4.6em 0 2em 0;
+    margin: 4.6em 0 1.3em 0;
     text-align: center;
   }
 
   // card component
   &__article {
-    padding: 2.5em 1em;
+    padding: 1.9em 0.125em 1.6rem 0.125em;
     border-bottom: 1px solid $color-light-grayish-blue;
   }
 
@@ -44,6 +48,10 @@
   &__article__details {
     display: flex;
     justify-content: space-between;
+
+    span {
+      padding-top: 1.225rem;
+    }
   }
 
   // hidden content
