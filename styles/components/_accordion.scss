@@ -3,6 +3,7 @@
 @use '../abstracts/' as *;
 
 .accordion {
+  @include box-shadow(1px 17px 58px -18px rgba(0, 0, 0, 0.6));
   margin-top: 14.9em;
   padding: 8.8em 0.9em 4.9em 0.9em;
   background-color: #fff;
@@ -45,18 +46,64 @@
     border-bottom: 1px solid $color-light-grayish-blue;
   }
 
-  // visible content
+  // Q&A section
   &__article__details {
     display: flex;
     justify-content: space-between;
     color: $color-dark-grayish-blue;
-    span {
-      padding-top: 1.225rem;
-    }
-  }
 
-  // hidden content
-  &__article__bottom {
-    display: none;
+    // question on the article ( top part )
+    summary {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    summary::-webkit-destails-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: url("../../../../images/icon-arrow-down.svg");
+      display: block;
+      height: 12px;
+      width: 12px;
+    }
+
+    // open state of question
+    &[open] > summary::after {
+      content: url('"../../../../images/icon-arrow-up.svg');
+      display: block;
+      width: 12px;
+      height: 12px;
+    }
+
+    // opened stated of summary
+    &[open] summary {
+      font-weight: 700;
+      color: $color-dark-blue;
+    }
+
+    // transition animation
+    &[open] summary ~ * {
+      animation: sweep 0.5s ease-in-out;
+    }
+
+    @keyframes sweep {
+      0% {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    // answer on the article ( bottom part )
+    &__answer {
+      padding-top: 1.225em;
+    }
   }
 }
