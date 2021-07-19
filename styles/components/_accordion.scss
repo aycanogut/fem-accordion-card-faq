@@ -17,10 +17,12 @@
     padding: 0 1.5em;
   }
 
-  // split screen to 50% for content
+  // wrapper splits the screen to %50 for desktop screen
   &__wrapper {
-    width: 50%;
-    margin-left: auto;
+    @include mq(small) {
+      width: 50%;
+      margin-left: auto;
+    }
   }
 
   &__background {
@@ -33,31 +35,29 @@
       // main illustration
       &__illustration {
         position: absolute;
-        top: 4.1em;
+        top: -19.5em;
         left: 50%;
         transform: translate(-55%, 0);
-
-        // hide on small to bigger screens
-        @include mq(small) {
-          display: none;
-        }
       }
 
-      // shadow
+      // shadow pattern
       &__pattern {
         position: absolute;
-        top: 14.7em;
+        top: -9em;
         left: 50%;
         transform: translate(-50%, 0);
+      }
 
-        // hide on small to bigger screens
-        @include mq(small) {
-          display: none;
-        }
+      // hide on small to bigger screens
+      @include mq(small) {
+        display: none;
       }
     }
 
-    // * displays on only bigger screens
+    // * displays on only desktop screens
+    &__desktop {
+      display: none;
+    }
   }
 
   // right side content
