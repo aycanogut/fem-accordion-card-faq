@@ -9,8 +9,18 @@
   background-color: #fff;
   border-radius: 24px;
 
+  @include mq(small) {
+    padding: 0;
+  }
+
   &__main {
     padding: 0 1.5em;
+  }
+
+  // split screen to 50% for content
+  &__wrapper {
+    width: 50%;
+    margin-left: auto;
   }
 
   &__background {
