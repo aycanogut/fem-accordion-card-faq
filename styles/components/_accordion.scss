@@ -20,13 +20,13 @@
   // wrapper splits the screen to %50 for desktop screen
   &__wrapper {
     @include mq(small) {
-      width: 50%;
-      margin-left: auto;
+      display: flex;
+      width: 100%;
     }
   }
 
   &__background {
-    //* displays on only mobile screens
+    //* displays the backgrounds on only mobile screens
     &__mobile {
       position: relative;
       display: flex;
@@ -54,9 +54,35 @@
       }
     }
 
-    // * displays on only desktop screens
+    // * displays the backgrounds on only desktop screens
     &__desktop {
       display: none;
+
+      @include mq(small) {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        background: lime;
+        margin-right: auto;
+      }
+
+      &__illustration {
+        background-color: red;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    // divide main content to two pieces. left side ( background )
+    @include mq(small) {
+      width: 50%;
+    }
+  }
+
+  &__content {
+    // divide main content to two pieces. left side ( texts )
+    @include mq(small) {
+      width: 50%;
     }
   }
 
