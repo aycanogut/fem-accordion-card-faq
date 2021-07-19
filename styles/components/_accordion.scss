@@ -10,11 +10,16 @@
   border-radius: 24px;
 
   @include mq(small) {
-    padding: 0;
+    margin-top: 12.7em;
+    padding: 2.3em 0 0 0;
   }
 
   &__main {
     padding: 0 1.5em;
+
+    @include mq(small) {
+      padding: 0 9.4em 0 1.5em;
+    }
   }
 
   // wrapper splits the screen to %50 for desktop screen
