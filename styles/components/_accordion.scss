@@ -17,13 +17,18 @@
     //* displays on only mobile screens
     &__mobile {
       position: relative;
+      display: flex;
+      justify-content: center;
 
+      // main illustration
       &__illustration {
         position: absolute;
         top: 4.1em;
-        left: 46%;
-        transform: translate(-50%, 0);
+        left: 50%;
+        transform: translate(-55%, 0);
       }
+
+      // shadow
       &__pattern {
         position: absolute;
         top: 14.7em;
@@ -31,6 +36,7 @@
         transform: translate(-50%, 0);
       }
     }
+
     // * displays on only bigger screens
   }
 
