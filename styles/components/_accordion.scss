@@ -61,25 +61,37 @@
 
     // * displays the backgrounds on only desktop screens
     &__desktop {
-      display: none;
+      display: none; // defaults behavior on mobile screens
+
+      &__illustration {
+        position: absolute;
+        top: 5em;
+        left: -6em;
+      }
+
+      &__pattern {
+        position: absolute;
+        top: 5em;
+      }
+
+      &__cube {
+        position: absolute;
+        top: 30em;
+        left: 16.7em;
+      }
 
       @include mq(small) {
         position: relative;
         display: flex;
         justify-content: flex-start;
-        background: lime;
-        margin-right: auto;
-      }
-
-      &__illustration {
-        background-color: red;
-        position: absolute;
-        left: 0;
+        width: 100%;
+        height: 100%;
       }
     }
 
     // divide main content to two pieces. left side ( background )
     @include mq(small) {
+      overflow: hidden;
       width: 50%;
     }
   }
