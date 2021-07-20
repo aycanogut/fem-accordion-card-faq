@@ -4,13 +4,14 @@
 
 .accordion {
   @include box-shadow(1px 17px 58px -18px rgba(0, 0, 0, 0.6));
-  margin-top: 14.9em;
+  margin-top: 12.9em;
   padding: 8.8em 0.9em 4.9em 0.9em;
   background-color: #fff;
   border-radius: 24px;
 
   @include mq(small) {
-    margin-top: 12.7em;
+    max-width: 920px;
+    margin: 20% auto 0 auto; //todo align component on center vertically
     padding: 2.3em 0 0 0;
   }
 
@@ -74,10 +75,20 @@
         top: 5em;
       }
 
+      // wrapper of the cube
+      &__no-overflow {
+        position: relative;
+      }
+
       &__cube {
-        position: absolute;
-        top: 30em;
-        left: 16.7em;
+        display: none;
+
+        @include mq(small) {
+          position: absolute;
+          display: block;
+          top: -10em;
+          left: 1em;
+        }
       }
 
       @include mq(small) {
