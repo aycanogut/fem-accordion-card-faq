@@ -5,8 +5,4 @@
 .container {
   @include make-container(2.3em);
   height: 100%;
-
-  @include mq(small) {
-    // @include make-container(26em);
-  }
 }
