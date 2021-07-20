@@ -12,7 +12,7 @@
   @include mq(small) {
     max-width: 920px;
     margin: 12.7em auto 0 auto;
-    padding: 2.3em 0 0 0;
+    padding: 0 0 0 0;
   }
 
   &__main {
@@ -68,19 +68,25 @@
 
       &__illustration {
         position: absolute;
-        top: 5em;
+        top: 7em;
         left: -8em;
       }
 
       &__pattern {
         position: absolute;
-        top: 5em;
+        top: 8em;
+        left: -8em;
       }
 
       &__cube {
-        position: absolute;
-        top: -17em;
-        left: -9.3em;
+        display: none;
+
+        @include mq(small) {
+          position: absolute;
+          top: -31em;
+          left: -9.3em;
+          display: block;
+        }
       }
 
       @include mq(small) {
@@ -112,7 +118,7 @@
 
   // right side content
   &__header {
-    margin: 4.6em 0 1.3em 0;
+    margin: 6.9em 0 1.55em 0.2em;
     text-align: center;
 
     @include mq(small) {
