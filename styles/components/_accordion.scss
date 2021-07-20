@@ -4,14 +4,14 @@
 
 .accordion {
   @include box-shadow(1px 17px 58px -18px rgba(0, 0, 0, 0.6));
-  margin-top: 12.9em;
+  margin-top: 14.9em;
   padding: 8.8em 0.9em 4.9em 0.9em;
   background-color: #fff;
   border-radius: 24px;
 
   @include mq(small) {
     max-width: 920px;
-    margin: 20% auto 0 auto; //todo align component on center vertically
+    margin: 12.7em auto 0 auto;
     padding: 2.3em 0 0 0;
   }
 
@@ -63,6 +63,7 @@
     // * displays the backgrounds on only desktop screens
     &__desktop {
       display: none; // defaults behavior on mobile screens
+      overflow: hidden;
 
       &__illustration {
         position: absolute;
@@ -75,20 +76,10 @@
         top: 5em;
       }
 
-      // wrapper of the cube
-      &__no-overflow {
-        position: relative;
-      }
-
       &__cube {
-        display: none;
-
-        @include mq(small) {
-          position: absolute;
-          display: block;
-          top: -10em;
-          left: 1em;
-        }
+        position: absolute;
+        top: -10em;
+        left: -10em;
       }
 
       @include mq(small) {
@@ -102,9 +93,13 @@
 
     // divide main content to two pieces. left side ( background )
     @include mq(small) {
-      overflow: hidden;
       width: 50%;
     }
+  }
+
+  &__no-overflow {
+    position: relative;
+    overflow: visible;
   }
 
   &__content {
