@@ -58,4 +58,3 @@ I learned the usage of details and summary HTML tags.
 - [Medium](https://medium.com/@aycanogut)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/bleedeleventh)
 - [CodePen](https://codepen.io/aycanogutt)
-- 
