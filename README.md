@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card
 
-## Welcome! 👋
+![](https://pbs.twimg.com/profile_images/1047378912819531776/jg7V1u54_400x400.jpg)
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
